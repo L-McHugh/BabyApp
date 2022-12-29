@@ -1,5 +1,4 @@
-
-![Logo](https://i.postimg.cc/28LQpL81/Screenshot-2022-12-26-at-17-22-08.png)
+![LittleChick](https://user-images.githubusercontent.com/105207906/209977724-bea8f18e-a6f2-4724-9abe-09ad49a23ade.gif)
 # Little Chick Baby App
 
 The brief: to create an app that would help all carers.
@@ -36,6 +35,12 @@ I choose these colours to help with accessibility so the app truely was for all.
 
 
 # Demo
+
+
+https://user-images.githubusercontent.com/105207906/209977617-ba22b9e3-330e-4d04-a304-a4a2b2bb87f6.mp4
+
+
+
 
 
 # How to run the front end:
