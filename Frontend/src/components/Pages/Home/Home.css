@@ -1,0 +1,43 @@
+.logOutDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.littleChickLogOut {
+  width: 50vw;
+  height: auto;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.733);
+  transition: all 0.3s ease-in-out;
+}
+
+.logInDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.littleChickLogIn {
+  width: 40vw;
+  height: auto;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.733);
+  transition: all 0.3s ease-in-out;
+}
+
+.welcomeUser {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+}

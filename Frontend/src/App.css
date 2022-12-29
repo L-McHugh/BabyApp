@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.buttonDivApp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #eaca58;
+  border: none;
+  color: white;
+  padding: 1vw 2vw;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 4px 2px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #001b2e;
+}

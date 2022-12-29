@@ -1,0 +1,34 @@
+.feedingPageDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.heading{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
+
+.listDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    border: .5vw solid #001B2E;
+    border-radius: 1vw;
+    width: 80vw;
+    height: auto;
+    margin: 1vw;
+}
+
+.sortButton{
+    align-items: flex-start;
+}
+
+

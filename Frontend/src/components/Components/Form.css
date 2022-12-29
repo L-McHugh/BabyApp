@@ -1,0 +1,27 @@
+.formDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.timeLabel {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.typeLabel {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+input {
+  border-radius: 5px;
+  font-size: auto;
+  padding: 0.5vw;
+}

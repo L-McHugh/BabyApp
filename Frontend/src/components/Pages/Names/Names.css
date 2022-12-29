@@ -1,0 +1,134 @@
+.titleDiv{
+  display: flex;
+  justify-content: center;
+}
+
+
+.letterButtonDiv {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    
+    .letterButtonDiv > button {
+      margin: 5vw;
+    }
+
+.buttonDiv{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        }
+        
+        .buttonDiv > button {
+        margin: 5vw;
+        }
+
+.nameDiv {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+.favouriteTitleDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+  }
+
+.favouriteDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+.favouriteDiv > button {
+    margin: 5vw;
+  }
+
+/* Letter button styling */
+.letterButton {
+      background-color: #EACA58;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 2em;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5%;
+    }
+    
+    .letterButton:hover {
+      background-color: #001B2E;
+    }
+
+.refreshButton, .inputButton {
+    background-color: #EACA58;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2%;
+}
+
+.removeButton {
+    background-color: #EACA58;
+    border: none;
+    color: white;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.5em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2%;
+}
+    
+.refreshButton:hover, .inputButton:hover, .removeButton:hover {
+      background-color: #001B2E;
+    }
+
+.randomName{
+    font-size: 3em;
+    font-weight: bold;
+    color: #001B2E;
+    }
+
+.favouriteName{
+    font-size: 2em;
+    font-weight: bold;
+    color: #001B2E;
+    list-style: none;
+    }
+
+.favouriteTitle{
+    font-size: 2em;
+    font-weight: bold;
+    color: #001B2E;
+    }
