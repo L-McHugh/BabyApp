@@ -65,7 +65,7 @@
 
 /* Letter button styling */
 .letterButton {
-      background-color: #EACA58;
+      background-color: var(--button-color);
       border: none;
       color: white;
       padding: 15px 32px;
@@ -79,11 +79,11 @@
     }
     
     .letterButton:hover {
-      background-color: #001B2E;
+      background-color: var(--button-hover-color);
     }
 
 .refreshButton, .inputButton {
-    background-color: #EACA58;
+    background-color: var(--button-color);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -97,7 +97,7 @@
 }
 
 .removeButton {
-    background-color: #EACA58;
+    background-color: var(--button-color);
     border: none;
     color: white;
     padding: 5%;
@@ -111,24 +111,24 @@
 }
     
 .refreshButton:hover, .inputButton:hover, .removeButton:hover {
-      background-color: #001B2E;
+      background-color: var(--button-hover-color);
     }
 
 .randomName{
     font-size: 3em;
     font-weight: bold;
-    color: #001B2E;
+    color: var(--button-hover-color);
     }
 
 .favouriteName{
     font-size: 2em;
     font-weight: bold;
-    color: #001B2E;
+    color: var(--button-hover-color);
     list-style: none;
     }
 
 .favouriteTitle{
     font-size: 2em;
     font-weight: bold;
-    color: #001B2E;
+    color: var(--button-hover-color);
     }

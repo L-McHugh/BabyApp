@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-    border: .5vw solid #001B2E;
+    border: .5vw solid var(--button-hover-color);
     border-radius: 1vw;
     width: 80vw;
     height: auto;

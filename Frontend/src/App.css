@@ -5,6 +5,9 @@
 
 :root {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* setting variables */
+  --button-color: #eaca58;
+  --button-hover-color: #001b2e;
 }
 
 .buttonDivApp {
@@ -15,7 +18,7 @@
 }
 
 button {
-  background-color: #eaca58;
+  background-color: var(--button-color);
   border: none;
   color: white;
   padding: 1vw 2vw;
@@ -27,5 +30,5 @@ button {
 }
 
 button:hover {
-  background-color: #001b2e;
+  background-color: var(--button-hover-color);
 }
