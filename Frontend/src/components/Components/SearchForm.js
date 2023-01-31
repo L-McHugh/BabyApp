@@ -4,12 +4,13 @@ export default function SearchForm(props) {
   return (
     <div className="searchFormDiv">
       <input
+        data-testid="searchFormInput"
         className="input"
         type={props.type}
         onChange={props.handleSearch}
       />
 
-      <button onClick={props.handleClickDescription}>{props.label}</button>
+      <button data-testid="searchFormButton" onClick={props.handleClickDescription}>{props.label}</button>
     </div>
   );
 }

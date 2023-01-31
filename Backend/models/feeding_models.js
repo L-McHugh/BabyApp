@@ -1,24 +1,25 @@
 import query from "../db/index.js";
 
-//query database and get information for FEEDING TABLE
-async function getFeedingInfoByID(id) {
-  const getFeedingObject = await query(
-    "SELECT * FROM feeding WHERE baby_id = $1;",
-    [id]
-  );
-  const getFeeding = getFeedingObject.rows;
-  //   console.log(getFeeding);
-  return getFeeding;
-}
+
+  //query database and get information for FEEDING TABLE
+  async function getFeedingInfoByID(id) {
+    const getFeedingObject = await query(
+      "SELECT * FROM feeding WHERE baby_id = $1;",
+      [id]
+    );
+    const getFeeding = getFeedingObject.rows;
+    // console.log(getFeeding);
+    return getFeeding;
+  }
+
 
 async function getFeedingInfoByVolume(volume, id) {
   const getFeedingObjectByVolume = await query(
     "SELECT * FROM feeding WHERE volume = $1 AND baby_id = $2",
     [volume, id]
   );
-  const getFeeding = getNappyObjectByVolume.rows;
-  console.log(getFeeding);
-  return getFeeding;
+  const getFeedingVolume = getFeedingObjectByVolume.rows;
+  return getFeedingVolume;
 }
 
 async function addFeedingInfo(feeding) {
@@ -48,7 +49,7 @@ async function deleteFeeding(id) {
   return deleteFeeding;
 }
 
-export {
+export default {
   getFeedingInfoByID,
   getFeedingInfoByVolume,
   addFeedingInfo,

@@ -115,7 +115,7 @@ export function Nappies() {
   // JSX components for the page and the CRUD operations
   return (
     <div className="nappyPageDiv">
-      <img src={NappiesTitle} alt="Nappies" className="nappyTitle" />
+      <img data-testid="nappyTitle" src={NappiesTitle} alt="Nappies" className="nappyTitle" />
 
       {/* Getting all the information about nappies */}
       <button onClick={handleClick}>Get Nappies</button>
@@ -156,7 +156,7 @@ export function Nappies() {
       {object.map((item) => {
         return (
           <div>
-            <div key={item.nappy_id} id={item.nappy_id} className="listDiv">
+            <div data-testid="itemList" key={item.nappy_id} id={item.nappy_id} className="listDiv">
               <h2>{item.start_time}</h2>
 
               <h1>{item.description}</h1>

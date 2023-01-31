@@ -4,7 +4,7 @@ import "./Form.css";
 export default function Form(props) {
   return (
     <div>
-      <div className="exitButtonDiv">
+      <div data-testid="form" className="exitButtonDiv">
         <button className="exitButton" onClick={props.visibility}>
           X
         </button>
@@ -14,6 +14,7 @@ export default function Form(props) {
         <label className="timeLabel">
           Start time:
           <input
+            data-testid="formTime"
             type="datetime-local"
             name="start_time"
             required
@@ -24,6 +25,7 @@ export default function Form(props) {
         <label className="typeLabel">
           {props.label}:
           <input
+            data-testid="formDescription"
             type={props.type}
             name="description"
             required
@@ -32,7 +34,7 @@ export default function Form(props) {
           />
         </label>
 
-        <button onClick={props.onClick}>Submit</button>
+        <button data-testid="formButton" onClick={props.onClick}>Submit</button>
       </form>
     </div>
   );

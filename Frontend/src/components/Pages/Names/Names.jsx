@@ -35,7 +35,7 @@ export function Names() {
     console.log(document.querySelector("#toggleValue").checked);
     if (document.querySelector("#toggleValue").checked === false) {
       setGender(GIRL_NAMES);
-      // document.body.style.backgroundColor = '#F589A4'
+      // document.body.style.backgroundColor = '4#F589A'
       document.body.style.backgroundImage = `url(${girlBackground})`;
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundSize = "cover";
@@ -96,17 +96,17 @@ export function Names() {
 
       {/* Title  */}
       <div className="titleDiv">
-        <img className="titleImage" src={NamesTitle} alt="Names" />
+        <img data-testid="namesTitle" className="titleImage" src={NamesTitle} alt="Names" />
       </div>
 
       {/* Random name */}
       <div className="nameDiv">
-        <h1 className="randomName">{randomName}</h1>
+        <h1 data-testid="randomName" className="randomName">{randomName}</h1>
       </div>
 
       {/* Buttons */}
       <div className="buttonDiv">
-        <button className="refreshButton" onClick={RefreshName}>
+        <button data-testid="getNewNameButton" className="refreshButton" onClick={RefreshName}>
           New name
         </button>
 

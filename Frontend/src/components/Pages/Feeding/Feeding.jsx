@@ -73,7 +73,7 @@ export function Feeding() {
       start_time: payload.start_time,
       volume: payload.volume,
     };
-    await fetch(`http://localhost:3001/api/${table}`, {
+    await fetch(`${url}/${table}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(obj),
@@ -114,7 +114,7 @@ export function Feeding() {
   return (
     <div className="feedingPageDiv">
     {/* Title */}
-      <img className="feedingTitle" src={FeedingTitle} alt="feedingTitle" />
+      <img data-testid="feedingTitle"  className="feedingTitle" src={FeedingTitle} alt="feedingTitle" />
 
       {/* Progress bar */}
       <h3 className="heading">Daily total</h3>
@@ -125,10 +125,10 @@ export function Feeding() {
       />
 
       {/* Getting all the information about nappies */}
-      <button onClick={handleClick}>Get Feeding</button>
+      <button data-testid="getFeedingButton" onClick={handleClick}>Get Feeding</button>
 
       {/* Create a new post */}
-      <button onClick={handleVisibility}>Add</button>
+      <button data-testid="addFeedingButton" onClick={handleVisibility}>Add</button>
       <div
         className="form-container"
         style={{ visibility: isVisible ? "visible" : "hidden" }}
@@ -157,9 +157,9 @@ export function Feeding() {
       {/* Displaying the information */}
       {object.map((item) => {
         return (
-          <div>
+          <div data-testid="feedingData">
             <div key={item.feeding_id} id={item.feeding_id} className="listDiv">
-              <h2>{item.start_time}</h2>
+              <h2 data-testid="feedings" >{item.start_time}</h2>
 
               <h1>{item.volume}ml</h1>
 

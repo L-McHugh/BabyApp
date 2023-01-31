@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form/> successfully renders the component, matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="exitButtonDiv"
+      data-testid="form"
+    >
+      <button
+        class="exitButton"
+      >
+        X
+      </button>
+    </div>
+    <form
+      autocomplete="off"
+      class="formDiv"
+    >
+      <label
+        class="timeLabel"
+      >
+        Start time:
+        <input
+          data-testid="formTime"
+          name="start_time"
+          required=""
+          type="datetime-local"
+        />
+      </label>
+      <label
+        class="typeLabel"
+      >
+        Description:
+        <input
+          data-testid="formDescription"
+          name="description"
+          placeholder="Enter description"
+          required=""
+          type="text"
+        />
+      </label>
+      <button
+        data-testid="formButton"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
